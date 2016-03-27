@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="التواصل مع مدير الحسابات في تويتر"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="مكتبة نزار قباني"
+            android:id="@+id/nizar"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="مكتبة محمود درويش"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            style="@style/search_field_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <GridView
+            android:scrollbars="none"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:stretchMode="columnWidth"/>
+    </LinearLayout>
+
+</LinearLayout>

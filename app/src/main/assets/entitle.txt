@@ -1,0 +1,7 @@
+        movies.add(new Downloaded(text.toString(), text.toString(), R.drawable.book1));
+
+        movies.add(new Downloaded(text.toString(), text.toString(), R.drawable.book1));
+
+        movies.add(new Downloaded(text.toString(), text.toString(), R.drawable.book1));
+
+        movies.add(new Downloaded(text.toString(), text.toString(), R.drawable.book1));

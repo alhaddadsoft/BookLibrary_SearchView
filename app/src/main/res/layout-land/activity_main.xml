@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="التواصل مع مطور البرنامج"
+            android:id="@+id/contatus"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="مكتبة نزار قباني"
+            android:id="@+id/nizar"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="مكتبة محمود درويش"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:elegantTextHeight="false"
+            android:textColor="#371212" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            style="@style/search_field_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_edit_text"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="2">
+
+            <GridView
+                android:scrollbars="none"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/grid_view"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1.5" />
+
+            <include
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                layout="@layout/twitteraccount"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
